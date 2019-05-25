@@ -5,7 +5,7 @@
 
 <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/logos.png" alt="IFPB, GcomPI" />
 
-Rafael Figueredo Guimarães \
+Rafael Figueredo Guimarães
 
 **Orientadores:**\
 Jeronimo Silva Rocha \
