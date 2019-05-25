@@ -1,10 +1,9 @@
 # Sistema de Localização Indoor para Pessoas com Deficiência Visual usando Bluetooth Low Energy
 
-## Instituto Federal da Paraíba
+### Instituto Federal da Paraíba
+### Grupo de Pesquisa em Comunicações e Processamento de Informação:
 
-Grupo de Pesquisa em Comunicações e Processamento de Informação
-
-
+<img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/logos.png" alt="IFPB, GcomPI" />
 
 Autores: 
 Rafael Guimarães \
