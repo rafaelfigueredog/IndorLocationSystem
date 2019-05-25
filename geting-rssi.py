@@ -17,6 +17,7 @@ class ScanDelegate(DefaultDelegate):
 def imprime(rssi):
     print '\x1b[2J\x1b[1;1H'
     print '\n RSSI:',rssi,'dbm'
+    print '\n Distancia:', (10 **((-59 - rssi)/(10*2))) , 'm' 
     
 nomeDoArquivo = raw_input("\nArquivo: ") # sem extensão
 nomeDoArquivo += ".txt"
