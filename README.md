@@ -5,8 +5,7 @@
 
 <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/logos.png" alt="IFPB, GcomPI" />
 
-Autores: 
-Rafael Guimarães \
+Rafael Figueredo Guimarães \
 Jeronimo Silva Rocha \
 Anderson Fabiano Batista Ferreira da Costa 
 
