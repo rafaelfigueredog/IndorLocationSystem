@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 from bluepy.btle import Scanner, DefaultDelegate
+from datetime import datetime
 import time
-
 
 class ScanDelegate(DefaultDelegate):
     def __init__(self):
@@ -13,25 +14,32 @@ class ScanDelegate(DefaultDelegate):
             print "Received new data from", dev.addr """
 
 
-
+def imprime(rssi):
+    print '\x1b[2J\x1b[1;1H'
+    print '\n RSSI:',rssi,'dbm'
+    
+nomeDoArquivo = raw_input("\nArquivo: ") # sem extensão
+nomeDoArquivo += ".txt"
+arquivo = open(nomeDoArquivo, 'w')
 
 RSSI = []
-timeout = time.time() + 300  
+
+timeout, start_time = time.time() + 300, datetime.now()  
 while True:
     if time.time() >= timeout:
         break
     
     scanner = Scanner().withDelegate(ScanDelegate())
-    devices = scanner.scan(1.0)
+    devices = scanner.scan(0.5)
 
     for dev in devices:
         if (dev.addr == "fb:c6:58:b7:fd:e1"):
-            print '\x1b[2J\x1b[1;1H'
-            print 'RSSI:', dev.rssi, 'dbm' 
+            imprime(dev.rssi)
             RSSI.append(dev.rssi)
         #print "Device %s (%s), RSSI=%d dB" % (dev.addr, dev.addrType, dev.rssi)
         #for (adtype, desc, value) in dev.getScanData():
         #    print "  %s = %s" % (desc, value)
-
-print(RSSI)
-print(len(RSSI))
+arquivo.write(str(RSSI))
+arquivo.close()
+end_time = datetime.now()
+print('\nExperiment time: {} \n'.format(end_time - start_time))
