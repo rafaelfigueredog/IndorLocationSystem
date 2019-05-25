@@ -5,6 +5,7 @@
 
 <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/logos.png" alt="IFPB, GcomPI" />
 
+**Discente:**\
 Rafael Figueredo Guimarães
 
 **Orientadores:**\
