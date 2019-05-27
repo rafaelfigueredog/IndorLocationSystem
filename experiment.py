@@ -14,33 +14,26 @@ class ScanDelegate(DefaultDelegate):
             print "Received new data from", dev.addr """
 
 
-def imprime(rssi):
-    print '\x1b[2J\x1b[1;1H'
-    print '\n RSSI:',rssi,'dbm'
-    print '\n Distancia:', (10 **((-59 - rssi)/(10*2))) , 'm' 
-    
-nomeDoArquivo = raw_input("\nArquivo: ") # sem extensão
-nomeDoArquivo += ".txt"
-arquivo = open(nomeDoArquivo, 'w')
+"""   """
 
 RSSI = []
-
-timeout, start_time = time.time() + 300, datetime.now()  
-while True:
-    if time.time() >= timeout:
-        break
+sizeRSSI = 0
+start_time = datetime.now()  
+while sizeRSSI < 300:
     
     scanner = Scanner().withDelegate(ScanDelegate())
-    devices = scanner.scan(0.5)
+    devices = scanner.scan(1)
 
     for dev in devices:
-        if (dev.addr == "fb:c6:58:b7:fd:e1"):
-            imprime(dev.rssi)
+        if (dev.addr == "c8:fd:19:37:2b:0a"):
+            #imprime(dev.rssi)
             RSSI.append(dev.rssi)
+            sizeRSSI += 1
         #print "Device %s (%s), RSSI=%d dB" % (dev.addr, dev.addrType, dev.rssi)
         #for (adtype, desc, value) in dev.getScanData():
         #    print "  %s = %s" % (desc, value)
-arquivo.write(str(RSSI))
-arquivo.close()
+
 end_time = datetime.now()
-print('\n Experiment time: {} \n'.format(end_time - start_time))
+print '\n Experiment time: {} \n'.format(end_time - start_time)
+print ' RSSI:', RSSI 
+print "\n Dados Coletados: ", sizeRSSI
