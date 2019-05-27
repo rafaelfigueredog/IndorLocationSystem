@@ -14,7 +14,10 @@ class ScanDelegate(DefaultDelegate):
             print "Received new data from", dev.addr """
 
 
-"""   """
+"""   
+def imprime(rssi):
+    print '\x1b[2J\x1b[1;1H'
+    print '\n RSSI:',rssi,'dbm' """
 
 RSSI = []
 sizeRSSI = 0
