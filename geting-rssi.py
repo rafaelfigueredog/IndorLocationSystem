@@ -17,7 +17,7 @@ class ScanDelegate(DefaultDelegate):
 def imprime(rssi):
     print '\x1b[2J\x1b[1;1H'
     print '\n RSSI:',rssi,'dbm'
-    print '\n Distancia:', (10 **((-59 - rssi)/(10*2))) , 'm' 
+    #print '\n Distancia:', (10 **((-59 - rssi)/(10*2))) , 'm' 
     
 nomeDoArquivo = raw_input("\nArquivo: ") # sem extensão
 nomeDoArquivo += ".txt"
@@ -25,16 +25,16 @@ arquivo = open(nomeDoArquivo, 'w')
 
 RSSI = []
 
-timeout, start_time = time.time() + 120, datetime.now()  
+timeout, start_time = time.time() + 1200, datetime.now()  
 while True:
     if time.time() >= timeout:
         break
     
     scanner = Scanner().withDelegate(ScanDelegate())
-    devices = scanner.scan(0.5)
+    devices = scanner.scan(10)
 
     for dev in devices:
-        #if (dev.addr == "c8:fd:19:37:2b:0a"):
+        if (dev.addr == "7c:01:0a:77:3c:b9"):
             imprime(dev.rssi)
             RSSI.append(dev.rssi)
         #print "Device %s (%s), RSSI=%d dB" % (dev.addr, dev.addrType, dev.rssi)
