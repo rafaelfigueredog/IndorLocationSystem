@@ -22,13 +22,13 @@ def imprime(rssi):
 RSSI = []
 sizeRSSI = 0
 start_time = datetime.now()  
-while sizeRSSI < 300:
+while sizeRSSI < 600:
     
     scanner = Scanner().withDelegate(ScanDelegate())
-    devices = scanner.scan(1)
+    devices = scanner.scan(10)
 
     for dev in devices:
-        if (dev.addr == "c8:fd:19:37:2b:0a"):
+        if (dev.addr == "7c:01:0a:77:3c:b9"):
             #imprime(dev.rssi)
             RSSI.append(dev.rssi)
             sizeRSSI += 1
