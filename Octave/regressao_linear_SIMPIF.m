@@ -4,8 +4,8 @@ clc;
  
 beta_0 = 1.0;
 Ptx = -59;
-d = [1.0*ones(100) 1.5*ones(100) 2.0*ones(100) 2.5*ones(100) 3.0*ones(100) 3.5*ones(100) 4.0*ones(100) 4.5*ones(100) 5.0*ones(100) 5.5*ones(100) 6.0*ones(100) 6.5*ones(100) 7.0*ones(100) 7.5*ones(100) 8.0*ones(100) 8.5*ones(100) 9.0*ones(100) 9.5*ones(100) 10.0*ones(100)];
-
+d = [1.0*ones(1,100) 1.5*ones(1, 100) 2.0*ones(1,100) 2.5*ones(1,100) 3.0*ones(1,100) 3.5*ones(1,100) 4.0*ones(1,100) 4.5*ones(1,100) 5.0*ones(1,100) 5.5*ones(1,100) 6.0*ones(1,100) 6.5*ones(1,100) 7.0*ones(1,100) 7.5*ones(1,100) 8.0*ones(1,100) 8.5*ones(1,100) 9.0*ones(1,100) 9.5*ones(1,100) 10.0*ones(1,100)];
+%d = [1:.5:10].*ones(1,100);
 d = d'
 
 
@@ -18,7 +18,7 @@ x = log10(d);
  
  % Regressão Linear
  %% A = w*f
-eta = (pinv(x'*x))*x'*y;
+eta = (pinv(x'*x))*x'*y
 %L = eta*x;
 PLm = beta_0 + 10*eta*log10(d);
  
