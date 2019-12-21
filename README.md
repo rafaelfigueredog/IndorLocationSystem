@@ -1,6 +1,8 @@
 # Sistema de Localização Indoor para Pessoas com Deficiência Visual usando Bluetooth Low Energy
 
- ¹ <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/map.gif" width="150"/> 
+¹
+
+<img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/map.gif" width="150"/> 
 
 <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/logos.png" /> 
 
