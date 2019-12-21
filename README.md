@@ -21,4 +21,4 @@ Implementar de um sistema que complemente a sinalização tátil em auxílio a p
 
 ### Créditos
 
-[[1]](https://br.pinterest.com/pin/411164640965690554/?lp=true) _gif from pinterest._ 
+[[1]](https://br.pinterest.com/pin/411164640965690554/?lp=true) _Gif from pinterest._ 
