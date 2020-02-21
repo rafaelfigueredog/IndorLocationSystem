@@ -115,8 +115,8 @@ def main():
     arg = parser.parse_args(sys.argv[1:])
 
     btle.Debugging = arg.verbose
-
-    scanner = btle.Scanner(arg.hci).withDelegate(ScanPrint(arg))
+    #arg.hci
+    scanner = btle.Scanner(1).withDelegate(ScanPrint(arg))
 
     print (ANSI_RED + "Scanning for devices..." + ANSI_OFF)
     devices = scanner.scan(arg.timeout)
