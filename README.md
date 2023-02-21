@@ -1,24 +1,23 @@
-# Sistema de Localização Indoor para Pessoas com Deficiência Visual usando Bluetooth Low Energy
+<p align="center">
+  <img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/logos.png" /> 
+</p>
 
-<img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/map.gif" width="150"/> 
+<p align="center">
+  Instituto Federal da Paraíba <br>
+  Grupo de Pesquisa em Comunicações e Processamento de Informação
+</p>
 
-<img src="https://github.com/rafaelfigueredog/IndorLocationSystem/blob/master/img/logos.png" /> 
+# Indoor Location System for People with Visual Impairments using Bluetooth Low Energy
 
-**Instituto Federal da Paraíba\
-Grupo de Pesquisa em Comunicações e Processamento de Informação**
+This repository contains the project developed by Rafael Figueredo Guimarães as part of the research activities of the Communications and Information Processing Research Group at the Federal Institute of Paraíba.
 
-**Discente:**\
-Rafael Figueredo Guimarães
+##  Objective
+The objective of this project is to implement a system that complements tactile signage to assist people with visual impairments, enabling their real-time orientation. Through the system, users will receive interactive feedback with information about their environment and options available to them, enhancing their ability to navigate even in unfamiliar environments.
 
-**Orientadores:**\
-Jeronimo Silva Rocha \
-Anderson Fabiano Batista Ferreira da Costa 
+## Contents
+This repository contains the source code, documentation, and other materials related to the Indoor Location System for People with Visual Impairments using Bluetooth Low Energy project.
 
-## Objetivo 
-
-Implementar de um sistema que complemente a sinalização tátil em auxílio a pessoas com deficiência visual, possibilitando sua orientação em tempo real. Por meio do sistema o usuário deve ter um retorno interativo com informações sobre o ambiente e opções à sua volta, ampliando sua capacidade de localização e deslocamento mesmo em ambientes desconhecidos.
-
-
-### Créditos
-
-[[1]](https://br.pinterest.com/pin/411164640965690554/?lp=true) _Gif from pinterest._ 
+## Authors
+- Rafael Figueredo Guimarães
+- Jeronimo Silva Rocha
+- Anderson Fabiano Batista Ferreira da Costa 
